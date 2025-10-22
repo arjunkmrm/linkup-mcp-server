@@ -68,6 +68,14 @@ Add this to your VS Code MCP config file. See [VS Code MCP docs](https://code.vi
 }
 ```
 
+### Installing via Smithery
+
+To install Linkup MCP Server automatically via [Smithery](https://smithery.ai/server/@LinkupPlatform/linkup-mcp-server):
+
+```bash
+npx -y @smithery/cli install @LinkupPlatform/linkup-mcp-server
+```
+
 ### MCP Bundle (recommanded for Claude Desktop)
 
 Download the pre-built MCP bundle, a self-contained package that works across compatible MCP clients (like Claude Desktop for example). MCP Bundles are developed by Anthropics see [here](https://github.com/anthropics/mcpb?tab=readme-ov-file#mcp-bundles-mcpb) for more info.
