@@ -11,19 +11,21 @@ npm install -g @anthropic-ai/mcpb
 echo "Building MCP server..."
 npm run build:stdio
 
-echo "Copying MCPB files..."
-cp mcpb/.mcpbignore .
-cp mcpb/manifest.json .
-
 echo "Validating MCPB manifest..."
-mcpb validate manifest.json
+# Validate the manifest that Smithery generated
+mcpb validate dist/bundle/mcpb-manifest.json
 
 echo "Packing MCPB bundle..."
-mcpb pack . mcpb/linkup-mcp-server.mcpb
+# Pack from dist/bundle directory (contains index.cjs and mcpb-manifest.json)
+# Copy .mcpbignore to exclude unnecessary files
+cp mcpb/.mcpbignore dist/bundle/.mcpbignore
+# Copy mcpb-manifest.json to manifest.json for packing
+cp dist/bundle/mcpb-manifest.json dist/bundle/manifest.json
+mcpb pack dist/bundle mcpb/linkup-mcp-server.mcpb
 
 echo "Cleaning up temporary files..."
-rm manifest.json
-rm .mcpbignore
+rm dist/bundle/manifest.json
+rm dist/bundle/.mcpbignore
 
 echo ""
 echo "✅ MCPB bundle created: mcpb/linkup-mcp-server.mcpb"
