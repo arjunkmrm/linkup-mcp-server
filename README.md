@@ -1,5 +1,6 @@
 # Linkup MCP Server
 
+[![Smithery Badge](https://smithery.ai/badge/arjunkmrm/linkup)](https://smithery.ai/server/arjunkmrm/linkup)
 [![smithery badge](https://smithery.ai/badge/@LinkupPlatform/linkup-mcp-server)](https://smithery.ai/server/@LinkupPlatform/linkup-mcp-server)
 
 A Model Context Protocol (MCP) server that provides web search and page fetching capabilities through [Linkup's](https://www.linkup.so/) advanced API. This server enables AI assistants like Claude to perform intelligent web searches with natural language queries and fetch content from any webpage, accessing real-time information from trusted sources across the web.
