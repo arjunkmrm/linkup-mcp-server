@@ -51,7 +51,7 @@
 		"@biomejs/biome": "2.2.6",
 		"@commitlint/cli": "^20.1.0",
 		"@commitlint/config-conventional": "^20.0.0",
-		"@smithery/cli": "^3.1.4",
+		"@smithery/cli": "^3.1.5",
 		"@types/node": "^24.8.0",
 		"husky": "^9.1.7",
 		"knip": "^5.65.0",
